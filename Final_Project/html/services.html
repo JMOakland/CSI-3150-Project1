@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <script src="../javascript/index.js" defer></script>
+    <title>Services| JVM</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar" id="nav-bar">
+            <div class="title">
+                James V Mencotti
+            </div>
+            <ul class="nav-actual">
+                <input type="checkbox" id="checkbox-toggle" />
+                <label for="checkbox-toggle" class="nav-alt">&#9776;</label>
+             <div class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li class="service-list">
+                    <a href="./services.html"></a>Services</a>
+                    <ul class="service-dropdown">
+                        <li><a href="./services.html#programming">Programming</a></li>
+                        <li><a href="./services.html#video">Video Production</a></li>
+                        <li><a href="./services.html#websites">Website Creation</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li class="service-list">
+                    <a href="./about.html">About</a>
+                    <ul class="service-dropdown">
+                        <li><a href="./about.html#skills">Skills</a></li>
+                        <li><a href="./about.html#education">Education</a></li>
+                        <li><a href="./about.html#activities">Activites</a></li>
+                    </ul>
+                </li>
+             </div>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="mainH1">Services</h1>
+    <div id="hidden"> </div>
+<main>
+    
+    <article id="programming">
+        <h2>Programming</h2>
+        <p id="articleP">I am proficient in Python, Java, and MySQL, and with the Linux Command Line. I have experience with HTML, CSS, JavaScript, C, and Ruby. I am interested in career opportunities in System Administration and/or Software Development.  Though I am open to working in other areas in the field of Computer Science. </p>
+    </article>
+<!--Break up with slideshow-->
+<div id="hidden"> </div>
+<article id="video">
+    <h2>Video Production and Editing</h2>
+    <p id="articleP">I have worked on professional video productions, commercial, industrial, training and general content creation for JJMencotti LLC, Rizzo Productions and Frame Lab, including work for Ford, GM, PPEx, ePS, Limmud and many others.  Many times I am on the project through the editorial process.
+        I support many areas on the production side of projects: camera operation, lighting, audio, scripting, craft services, and data management to name a few. I also provide creative editorial, taking the captured elements to the finish, creating the master files for distribution and uploading to various platforms, websites, Vimeo and/or YouTube. I am proficient in Adobe Premiere.  
+        </p>
+    <ul class="work-ex">
+        <h3>Work Examples</h3>
+        <li><a href="https://vimeo.com/224346482">ePS Intro (Editor, Grip, Lighting, Audio)</a></li>
+        <li><a href="https://vimeo.com/304670316">House of Bedrooms TV (Audio, Lighting, Grip)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=A4_RnpD64xk">Limmud Michigan 2016 event sampler tour (Editor, Grip, Audio, Lighting)</a></li>
+    </ul>
+</article>
+<div class="slideshow2">
+    <div class="slides2">
+        <img src="../videoprodpics/epsintro.png" alt="ePS Intro" usemap="#ePS"/>
+        <img src="../videoprodpics/house of bedrooms.png" alt="House of Bedrooms" usemap="#HOB"/>
+        <img src="../videoprodpics/limmud.png" alt="Limmud Michigan" usemap="#LMI"/>
+        <map name="ePS"><area href="https://vimeo.com/224346482"></area></map>
+        <map name="HOB"><area href="https://vimeo.com/304670316"></area></map>
+        <map name="LMI"><area coords="100, 100, 100" href="https://www.youtube.com/watch?v=A4_RnpD64xk"></area></map>
+    </div>
+</div>
+ 
+ 
+<!--Break up with slideshow-->
+<div id="hidden"> </div>
+<article id="websites">
+    <h2>Website Creation</h2>
+    <p id="articleP">In an ongoing freelance capacity, I provide web development services, including: website creative and layout, website building, Google Analytics installation, site updates , and maintenance. I currently provide these services for five commercial websites. I am very comfortable with Photoshop and WordPress.</p>
+    <ul class="work-ex">
+        <h3>Work Examples</h3>
+        <li><a href="https://jjmencottillc.com">JJMencotti LLC</a></li>
+        <li><a href="https://drakefinancialservices.com">Drake Financial Services</a></li>
+        <li><a href="https://mattmichalec.com">Matt Michalec</a></li>
+        <li><a href="https://bruceegnater.com">E3 Audio - Bruce Egnater</a></li>
+    </ul>
+</article>
+<div class="slideshow">
+    <div class="slides">
+        <img src="../pictures_for_website/image2.png" alt="slideshow"/>
+        <img src="../pictures_for_website/image3.png" alt="slideshow"/>
+        <img src="../pictures_for_website/image4.png" alt="slideshow"/>
+        <img src="../pictures_for_website/image5.png" alt="slideshow"/>
+        <img src="../pictures_for_website/image6.png" alt="slideshow"/>
+        <img src="../pictures_for_website/image8.png" alt="slideshow"/>
+    </div>
+</div>
+   
+    
+</main>
+<script>
+    const slideshow = document.querySelector('.slideshow');
+    const slides = slideshow.querySelector('.slides');
+    const images = slides.querySelectorAll('img');
+    const slideshow2 = document.querySelector('.slideshow2');
+    const slides2 = slideshow2.querySelector('.slides2');
+    const images2 = slides2.querySelectorAll('img');
+function play(){
+    let count = 0;
+    setInterval(function loop() {
+    count += 1;
+
+    if(count === images.length){
+     count = 0;
+     }
+        slides.style.transform = `translate3d(${count * -705}px, 0, 0)`;
+    } ,3000) 
+
+
+}
+function play2(){
+    let count = 0;
+    setInterval(function loop() {
+    count += 1;
+
+    if(count === images2.length){
+     count = 0;
+     }
+        slides2.style.transform = `translate3d(${count * -705}px, 0, 0)`;
+    } ,3000) 
+
+
+}
+
+play();
+play2();
+</script>
+<div id="hidden"> </div>
+<footer >
+    <a href="https://www.linkedin.com/in/james-mencotti-8809b71a5/" class="fa fa-linkedin"></a>
+    <div id="hidden"> </div>
+</footer>
+</body>
+</html>

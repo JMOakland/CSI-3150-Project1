@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome| JVM</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar" id="nav-bar">
+            <div class="title">
+                James V Mencotti
+            </div>
+            <ul class="nav-actual">
+                <input type="checkbox" id="checkbox-toggle" />
+                <label for="checkbox-toggle" class="nav-alt">&#9776;</label>
+             <div class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li class="service-list">
+                    <a href="./services.html"></a>Services</a>
+                    <ul class="service-dropdown">
+                        <li><a href="./services.html#programming">Programming</a></li>
+                        <li><a href="./services.html#video">Video Production</a></li>
+                        <li><a href="./services.html#websites">Website Creation</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li class="service-list">
+                    <a href="./about.html">About</a>
+                    <ul class="service-dropdown">
+                        <li><a href="./about.html#skills">Skills</a></li>
+                        <li><a href="./about.html#education">Education</a></li>
+                        <li><a href="./about.html#activities">Activites</a></li>
+                    </ul>
+                </li>
+             </div>
+            </ul>
+        </nav>
+    </header>
+    <main>   
+        <h1 class="mainH1">Welcome to JVM</h1>
+        <p id="hidden"> </p>
+   
+            <p class="mainP">I am a Computer Science major at Oakland University. I have been a leader of many teams using Scrum methodology, and In my Senior Capstone project class my team placed first in the class. I provide a number of services.
+                I have extensive knowledge of Python, MySQL, Java, and the Linux command line. 
+            I am a website developer and administrator. I am an editor, camera operator, and grip. 
+            I am proficient in Python, Java, and MySQL, and with the Linux Command Line. 
+            I have experience with HTML, CSS, JavaScript, C, and Ruby. 
+            I am interested in career opportunities in System Administration and/or Software Development.  
+            Though I am open to working in other areas of Computer Science, as well as, in Video Production or Webiste Creation. 
+            Thank you very much for your interest. </p> 
+    </main>  
+     <!--put slide show here-->
+    <div class="slideshow">
+        <div class="slides">
+            <img src="../pictures_for_website/image2.png" alt="slideshow"/>
+            <img src="../pictures_for_website/image3.png" alt="slideshow"/>
+            <img src="../pictures_for_website/image4.png" alt="slideshow"/>
+            <img src="../pictures_for_website/image5.png" alt="slideshow"/>
+            <img src="../pictures_for_website/image6.png" alt="slideshow"/>
+            <img src="../pictures_for_website/image8.png" alt="slideshow"/>
+        </div>
+    </div>
+
+    <h1 class="mainH1">Find Out More</h1>
+    <p id="hidden"> </p>
+    <ul id="more">
+        <li>
+            <a href="./services.html">Services</a>
+            <p>To see all the services I offer, please visit my Services page.</p>
+        </li>
+        <li>
+            <a href="./Contact.html">Contact</a>
+            <p>Please reach out and let me know how I can be of service</p>
+        </li>
+        <li>
+            <a href="./about.html">About</a>
+            <p>If you're interested in my education, background, or getting to know me a little better, click above.</p>
+        </li>
+
+    </ul>
+    <p id="hidden"> </p>
+    
+    <script>
+        const slideshow = document.querySelector('.slideshow');
+        const slides = slideshow.querySelector('.slides');
+        const images = slides.querySelectorAll('img');
+
+    function play(){
+        let count = 0;
+        setInterval(function loop() {
+        count += 1;
+
+        if(count === images.length){
+         count = 0;
+         }
+            slides.style.transform = `translate3d(${count * -705}px, 0, 0)`;
+        } ,3000) 
+
+    
+    }
+
+    play();
+    </script>
+    <footer class="foot">
+        <a href="https://www.linkedin.com/in/james-mencotti-8809b71a5/" class="fa fa-linkedin"></a>
+        <p id="hidden"> </p>
+    </footer>
+</body>
+</html>
