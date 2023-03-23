@@ -4,8 +4,8 @@ const images = slides.querySelectorAll('img');
 const slideshow2 = document.querySelector('.slideshow2');
 const slides2 = slideshow2.querySelector('.slides2');
 const images2 = slides2.querySelectorAll('img');
-const slideshow3 = document.querySelector('.slideshow');
-const slides3 = slideshow3.querySelector('.slides');
+const slideshow3 = document.querySelector('.slideshow3');
+const slides3 = slideshow3.querySelector('.slides3');
 const images3 = slides3.querySelectorAll('img');
 function play(){
     let count = 0;
