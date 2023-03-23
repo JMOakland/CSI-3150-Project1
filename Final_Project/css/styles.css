@@ -237,12 +237,14 @@ main h3{
 }
 #more li a{
     font-size: 22px;
+    color: #000;
 }
 .fa{
-    padding: 30px;
+    padding: 10px;
     display: flex;
-    background-color: #60a2cc;
-    
-    
+    color: white;
+    border-radius: 25%;
+    background-color: #0072b1;
+    border-spacing:20px;
 }
 
