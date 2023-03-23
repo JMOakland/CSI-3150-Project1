@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/index.js" defer></script>
     <title>Welcome| JVM</title>
 </head>
 <body>
@@ -84,27 +85,7 @@
     </ul>
     
     
-    <script>
-        const slideshow = document.querySelector('.slideshow');
-        const slides = slideshow.querySelector('.slides');
-        const images = slides.querySelectorAll('img');
-
-    function play(){
-        let count = 0;
-        setInterval(function loop() {
-        count += 1;
-
-        if(count === images.length){
-         count = 0;
-         }
-            slides.style.transform = `translate3d(${count * -705}px, 0, 0)`;
-        } ,3000) 
-
     
-    }
-
-    play();
-    </script>
     <footer class="foot">
         <a href="https://www.linkedin.com/in/james-mencotti-8809b71a5/" class="fa fa-linkedin"></a>
         <p id="hidden"> </p>
