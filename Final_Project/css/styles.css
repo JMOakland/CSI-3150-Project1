@@ -208,9 +208,10 @@ main h3{
     
 }
 #contactDiv img{
-    width: 200px;
-    height: 300px;
+    width: 370px;
+    height: 500px;
     margin-left: 50%;
+    margin-bottom: 130px;
 }
 #hidden{
     width: 100%;
