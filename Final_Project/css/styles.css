@@ -28,12 +28,16 @@ body{
     font-weight: 900;
     margin: 0;
     padding: 0;
-    
+    color: black;
 }
 .links li{
     width: 10em;
      margin: 0;
     padding: 0;
+}
+.links li a{
+    color: black;
+
 }
 .links li:hover{
     background-color:#528AAE;
@@ -44,8 +48,11 @@ body{
 
 .service-list{
     position: relative;
+    color: black;
 
-
+}
+.service-list li{
+    color: black;
 }
 .service-dropdown{
     background-color:#849caa;
@@ -53,16 +60,21 @@ body{
     display: none;
     top:18px;
     
+    
 }
 .service-dropdown li+li{
     margin-top: 5px;
-
 }
-.service-dropdown li{
+.service-dropdown li {
     padding: 0.5em 2em;
     width: 10em;
     text-align: center;
+    
 }
+.service-dropdown li a{
+    color: black;
+}
+
 .service-dropdown li:hover{
     background-color: #528AAE;
 }
