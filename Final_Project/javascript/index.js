@@ -18,7 +18,7 @@ function play(){
      count = 0;
      }
         slides.style.transform = `translate3d(${count * -705}px, 0, 0)`;
-    } ,3000) 
+    } ,6000) 
 
 
 }
@@ -32,7 +32,7 @@ function play2(){
      count = 0;
      }
         slides2.style.transform = `translate3d(${count * -705}px, 0, 0)`;
-    } ,3000) 
+    } ,6000) 
 
 
 }
@@ -48,7 +48,7 @@ function play3(){
     
         slides3.style.transform = `translate3d(${count * -712}px, 0, 0)`;
        
-    } ,3000);
+    } ,6000);
     
 }
 

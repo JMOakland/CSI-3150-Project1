@@ -12,7 +12,7 @@ function play(){
      
      }
         slides.style.transform = `translate3d(${count * -705}px, 0, 0)`;
-    } ,3000) 
+    } ,6000) 
     
     /**if (images[count].id === 'lastSlide'){
         

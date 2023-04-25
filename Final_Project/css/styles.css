@@ -91,6 +91,10 @@ input[type="checkbox"]{
     display: none;
     user-select: none;
 }
+.caption{
+    margin-left: 575px;
+    margin-bottom: 100px;
+}
 
 @media (max-width: 982px){
     .links{
@@ -311,6 +315,12 @@ main h3{
 #more li a{
     font-size: 22px;
     color: #000;
+    background-color: #849caa;
+    border-radius: 4px;
+    border-spacing: 8px;
+    padding: 5px;
+    
+    
 }
 .fa{
     padding: 10px;
