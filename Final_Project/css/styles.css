@@ -92,8 +92,15 @@ input[type="checkbox"]{
     user-select: none;
 }
 .caption{
-    margin-left: 575px;
+    
     margin-bottom: 100px;
+    display: flex;
+    position: relative;
+    margin-left: 550px;
+}
+.caption caption{
+    text-align: center;
+
 }
 
 @media (max-width: 982px){
